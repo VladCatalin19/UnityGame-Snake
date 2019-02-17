@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 0d0725838b3b8234dbd2cada45d98b3a
+timeCreated: 1502517918
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - clip: {fileID: 8300000, guid: a23c4b9fec09c5a4dbc53421c373a3b1, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

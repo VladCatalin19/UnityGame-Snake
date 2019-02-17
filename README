@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Vlad Marius-Cătălin 325CD
+Anul II Semestrul I
+Joc Snake făcut în Unity
+-------------------------------------------------------------------------------
+
+    Acest joc este o implementare a jocului clasic Snake folosing motorul grafic
+Unity.
+    Jocul dispune de un meniu principal prin care jucătorul poate începe jocul,
+schimba anumite setări ale jocului, vizualiza scorurile jocurilor jucate sau
+poate părăsi jocul.
+    Pentru reprezentarea jocului am folosit o matrice de numere întregi unde 0
+reprezintă o celulă goală, -1 poziția mărului pe care șarpele îl poate mânca,
+iar celelalte valori mai mari decât 0 reprezintă poziția și lungimea șarpelui.
+Valoarea cea mai mare reprezintă capul șarpelui, iar 1 reprezintă coada șarpe-
+lui. Astfel șarpele este reprezentat de un șir de numere naturale de la 1 până
+la lungimea șarpelui.
+    La mutarea șarpelui, se scad toate celulele din matrice care reprezintă
+șarpele cu 1 și se pune în matrice la poziția următoare a șarpelui (poziția cu-
+rentă + direcția de deplasare) valoarea care reprezintă lungimea șarpelui.
+    Dacă în celula următoare este un măr, nu se mai scad celulele șarpelui cu
+1, se mărește lungimea șarpelui și se procedează la fel pentru punerea valorii
+următoare în matrice.
+    Jocul se termină când nu mai sunt celule libere în matrice, poziția șarpe-
+lui a depășit limitele matricei sau capul șarpelui atinge orice altă parte din
+corpul acestuia.
+    La terminarea jocului se înregistrează scorul în tabela cu cele mai mari
+scoruri. Intrările din tabel sunt memorate în registrele din Windows.
